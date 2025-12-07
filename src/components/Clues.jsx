@@ -8,7 +8,7 @@ function Clues() {
 
     if (board != 0)
         return (
-            <div className="flex flex-col items-center gap-4 p-4 w-1/4">
+            <div className="flex flex-col items-center gap-4 p-4 w-full lg:w-1/4">
                 <div>Clues</div>
                 {clues
                     .filter((e) => e.board_id == board)

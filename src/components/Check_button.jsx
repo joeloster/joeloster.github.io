@@ -7,7 +7,7 @@ function Check_button() {
     return (
         <button
             onClick={() => set_check(true)}
-            className={`text-center p-4 w-30 rounded-md bg-blue-200 cursor-pointer ${check && "opacity-50"} ${
+            className={`text-center p-4 w-30 rounded-md bg-blue-200 cursor-pointer ${check && "hidden"} ${
                 board == 0 && "opacity-50"
             }`}
         >
