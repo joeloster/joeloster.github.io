@@ -1,0 +1,38 @@
+
+-ha ett tomt (på letter) board i context från början. 
+
+-baserat på row col kan jag uppdatera specifika platser i det statet. 
+
+-på save kan jag uppdatera board. 
+
+-på varje render av paget kan jag hämta current value från backend (progress)
+
+-ta bort check
+
+-lägg till att du hämtar correct board från backend på show solution
+
+-döp om boards och fixa importer
+
+
+KVAR ATT GÖRA
+
+matcha bräden mot varandra --> om samma: bakgrund grön annars byt bokstav
+
+hur ska jag göra med clues, något id i backend där dom ska börja och koppla till en clue
+    clues kan också göras precis som just nu direkt i frontend
+
+hur ska jag göra med status i board?
+    hardcodar in true och false
+
+fixa start of word placeholder
+    hardcodar in rätt siffra
+
+
+fixa cookies, fucked juist nu
+
+
+---------------------------
+
+låt backend ligga kvar, bra grund att utveckla på
+
+ändra till frontend only --> ingen kommer fuska och det blir enklare och jag mnåste inte hooka up servern

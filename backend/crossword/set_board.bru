@@ -1,0 +1,26 @@
+meta {
+  name: set_progress
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3029/api/set_progress
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "board": {
+      "1:1": { "status": false, "letter": "A" },
+      "1:2": { "status": false, "letter": "B" },
+      "1:3": { "status": false, "letter": "C" }
+    }
+  }
+  
+}
