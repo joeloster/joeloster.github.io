@@ -21,17 +21,18 @@ function Cell({ i }) {
     }, [guess]);
 
     return cell?.status ? (
-        <input
-            className={`border border-black outline-none text-center ${
-                guess == solution[key]?.letter && "bg-green-200"
-            }`}
-            value={show_solution ? solution[key]?.letter : guess}
-            onChange={(e) => set_guess(e.target.value.toUpperCase())}
-            disabled={show_solution}
-            type="text"
-            maxLength="1"
-            placeholder={`${start_of_word}`}
-        />
+        <div className="relative h-full w-full border border-black">
+            <input
+                className={`w-full h-full outline-none text-center ${guess == solution[key]?.letter && "bg-green-200"}`}
+                value={show_solution ? solution[key]?.letter : guess}
+                onChange={(e) => set_guess(e.target.value.toUpperCase())}
+                disabled={show_solution}
+                type="text"
+                maxLength="1"
+            />
+
+            <p className="absolute left-1 top-1 text-xs">{start_of_word}</p>
+        </div>
     ) : (
         <div className="bg-black"></div>
     );
