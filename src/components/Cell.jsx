@@ -20,6 +20,10 @@ function Cell({ i }) {
         set_board((prev) => ({ ...prev, [key]: { ...prev[key], letter: guess || "" } }));
     }, [guess]);
 
+    useEffect(() => {
+        localStorage.setItem("current_board", JSON.stringify(board));
+    }, [board]);
+
     return cell?.status ? (
         <div className="relative h-full w-full border border-black">
             <input
